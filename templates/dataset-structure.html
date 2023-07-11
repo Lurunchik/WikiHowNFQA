@@ -1,0 +1,28 @@
+<section id="dataset-structure" class="dataset-section">
+  <div class="content-container">
+    <h2>Dataset Structure</h2>
+    <p class="intro-text">The WikiHowQA dataset is composed of instances, each containing a question, a set of related documents,
+      and a human-authored answer. The WikiHowQA dataset is divided into two parts:</p>
+    <h3>QA Part</h3>
+    <p>This part contains questions, answers, and links to web archive snapshots of related HTML pages.
+      It is accessible for downloading on Hugging Face. Each dataset instance includes:</p>
+    <ul>
+      <li><b>article_id:</b> An integer identifier for the article corresponding to article_id from WikHow API.</li>
+      <li><b>question:</b> The non-factoid instructional question.</li>
+      <li><b>answer:</b> The human-written answer to the question corresponding human-written answer article summary from WikiHow website.</li>
+      <li><b>related_document_urls_wayback_snapshots:</b> A list of URLs to web archive snapshots of related documents corresponding references from WikiHow article.</li>
+      <li><b>split:</b> The split of the dataset that the instance belongs to ('train', 'validation', or 'test').</li>
+      <li><b>cluster:</b> An integer identifier for the cluster that the instance belongs to.</li>
+    </ul>
+    <h3>Document Content Part</h3>
+    <p>This part contains parsed HTML content from related documents. It is available for research groups
+      to use via signing a Data Transfer Agreement with RMIT University. Each instance includes:</p>
+    <ul>
+      <li><b>article_id:</b> The unique identifier of the article on the WikiHow website.</li>
+      <li><b>original_url:</b> The original URL of the web page containing the article.</li>
+      <li><b>archive_url:</b> The URL of a snapshot of the web page from archive.org. The snapshot is the version closest to when the article was created or modified.</li>
+      <li><b>parsed_text:</b> The plain text parsed from the URL in the form of text passages without any HTML text and page structures.</li>
+      <li><b>parsed_md:</b> The text parsed in MD format, which preserves formatting such as tables and lists when extracting text content from the web page.</li>
+    </ul>
+  </div>
+</section>

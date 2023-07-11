@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3e4757ff;
+    color: #ffdd2fff;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3e4757ff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.nav-bar a {
+    color: #ffdd2fff;
+    text-decoration: none;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 650px;
+    position: relative;
+}
+
+.header-content {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.header-content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.button-container a {
+    color: #ffdd2fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #ffdd2fff;
+    border-radius: 5px;
+}
+
+.header-image {
+    width: 37%;
+}
+
+.sticker {
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #ffdd2fff;
+    border-radius: 5px;
+}
+
+.content-section {
+    padding: 2em 0;
+    background-color: #fff;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.dataset-section h2 {
+    font-size: 2em;
+    color: #ffdd2fff;
+    margin-bottom: 1em;
+}
+
+.dataset-section p {
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ...existing styles... */
+
+.dataset-section {
+    background-color: #3e4757ff;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.intro-text {
+    font-size: 1.2em;
+}
+
+.data-fields {
+    font-size: 1.1em;
+}
+
+.carousel {
+    position: relative;
+    /*width: 100%; !important;*/
+    overflow: hidden;
+}
+
+.carousel-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 auto; /* centers the item horizontally */
+    background-color: #3e4757ff;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #ffdd2fff; /* Change the color of the arrows */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #ffdd2fff;
+    border-radius: 5px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 23px; /* Change the size of the arrows */
+    background: #ffdd2fff;
+    border-radius: 5px;
+}
+
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    background: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.content-section {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+    border: 1px solid #3e4757ff;
+    padding: 10px;
+    text-align: center;
+}
+
+.leaderboard-table .human-eval {
+    background-color: #3e4757ff;
+    color: #ffdd2fff;
+}
+
+table.leaderboard td {
+    white-space: nowrap;
+}
+
+table.leaderboard th {
+    white-space: nowrap;
+}
+
+.download-container {
+    padding-bottom: 20px;
+}
+
+.footer-section {
+    background-color: #3e4757ff;
+    color: #ffdd2fff;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.footer-section a {
+    color: #ffdd2fff;
+    text-decoration: none;
+}
+
+.passages .hidden {
+    display: none;
+}
+
+.passages.expanded .hidden {
+    display: list-item;
+}
+
+.read-more, .read-less {
+    cursor: pointer;
+}
+
+

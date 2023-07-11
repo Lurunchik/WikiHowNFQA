@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>WikiHowQA</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="https://semantic-ui.com/javascript/library/tablesort.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="base.css">
+</head>
+
+
+<body style="font-family: 'Lato', sans-serif;">
+
+{% block content %}{% endblock %}
+
+<footer class="footer-section">
+    <div class="footer-container">
+        <p>© 2023 | <a href="https://github.com/Lurunchik/wikihowQA" target="_blank">WikiHowQA on Github</a></p>
+    </div>
+</footer>
+
+<script>
+
+    document.querySelectorAll('.read-more').forEach(function (readMoreLink) {
+        readMoreLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.target.parentNode.querySelector('.passages').classList.add('expanded');
+            event.target.style.display = 'none';
+            event.target.parentNode.querySelector('.read-less').style.display = 'inline';
+        });
+    });
+
+    document.querySelectorAll('.read-less').forEach(function (readLessLink) {
+        readLessLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.target.parentNode.querySelector('.passages').classList.remove('expanded');
+            event.target.style.display = 'none';
+            event.target.parentNode.querySelector('.read-more').style.display = 'inline';
+        });
+    });
+
+
+    $(document).ready(function () {
+        $('.carousel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            infinite: true,
+        });
+    });
+
+</script>
+
+</body>
+</html>
