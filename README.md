@@ -30,7 +30,7 @@ dataset = load_dataset('WikiHowNFQA.jsonl')
 
 ## Download the Dataset
 
-The WikiHowQA dataset is divided into two parts:
+The WikiHowNFQA dataset is divided into two parts:
 
 1. **Main Part**: This part contains the questions, answers, and URLs to related documents. It is publicly available and can be downloaded from the Hugging Face Datasets platform [here](https://huggingface.co/datasets/Lurunchik/WikiHowNFQA). You can explore it and load this part of the dataset using the Hugging Face `datasets` library as follows:
 
@@ -39,20 +39,20 @@ The WikiHowQA dataset is divided into two parts:
     dataset = load_dataset('wikiHowNFQA')
     ```
 
-2. **Document Content Part**: This part contains the parsed HTML content of the related documents. To access this part of the dataset, you need to sign a Data Transfer Agreement with RMIT University. You can request access to this part of the dataset on the WikiHowQA website [here](https://lurunchik.github.io/WikiHowQA/).
+2. **Document Content Part**: This part contains the parsed HTML content of the related documents. To access this part of the dataset, you need to sign a Data Transfer Agreement with RMIT University. You can request access to this part of the dataset on the WikiHowNFQA website [here](https://lurunchik.github.io/WikiHowNFQA/).
 
 ## Paper
 
-The WikiHowQA dataset was introduced in our paper titled "WikiHowQA: A Comprehensive Benchmark for Multi-Document Non-Factoid Question Answering", which was presented at the 61st Conference of the Association for Computational Linguistics (ACL) in 2023.
+The WikiHowNFQA dataset was introduced in our paper titled "WikiHowQA: A Comprehensive Benchmark for Multi-Document Non-Factoid Question Answering", which was presented at the 61st Conference of the Association for Computational Linguistics (ACL) in 2023.
 
-In the paper, we discuss the creation of the WikiHowQA dataset, its structure, and its potential uses. We also present a unique human evaluation framework that smartly employs highlighted relevant supporting passages to circumvent common challenges in the field.
+In the paper, we discuss the creation of the WikiHowNFQA dataset, its structure, and its potential uses. We also present a unique human evaluation framework that smartly employs highlighted relevant supporting passages to circumvent common challenges in the field.
 
-You can read the full paper [here](https://lurunchik.github.io/WikiHowQA/data/ACL_MD_NFQA_dataset.pdf).
+You can read the full paper [here](https://lurunchik.github.io/WikiHowNFQA/data/ACL_MD_NFQA_dataset.pdf).
 
-If you use the WikiHowQA dataset in your research, please cite our paper:
+If you use the WikiHowNFQA dataset in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{bolotova2023wikihowqa,
+@inproceedings{bolotova2023wikihownfqa,
       title={WikiHowQA: A Comprehensive Benchmark for Multi-Document Non-Factoid Question Answering}, 
       author={Bolotova, Valeriia and Blinov, Vladislav and Filippova, Sofya and Scholer, Falk and Sanderson, Mark},
       booktitle="Proceedings of the 61th Conference of the Association for Computational Linguistics",
